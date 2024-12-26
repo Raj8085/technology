@@ -742,37 +742,63 @@ function TechnologyCybersecuritySupport() {
     >
       {/* Navbar */}
       <nav className="bg-gray-800 shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            <div className="text-white text-xl font-bold">CyberSecure</div>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              type="button"
-              className="md:hidden text-gray-300 hover:text-white focus:outline-none"
-              aria-label="Toggle Menu"
-            >
-              <img src="/menu-icon.jpg" alt="menu-icon" className="h-6 w-6" />
-            </button>
-            <div className="hidden md:flex space-x-6">
-              <a href="#home" className="text-gray-300 hover:text-teal-400">
-                Home
-              </a>
-              <a href="#about" className="text-gray-300 hover:text-teal-400">
-                About Us
-              </a>
-              <a href="#services" className="text-gray-300 hover:text-teal-400">
-                Services
-              </a>
-              <a href="#support" className="text-gray-300 hover:text-teal-400">
-                Support
-              </a>
-              <a href="#contact" className="text-gray-300 hover:text-teal-400">
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="flex justify-between items-center py-4">
+      <div className="text-white text-xl font-bold">CyberSecure</div>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        type="button"
+        className="md:hidden text-gray-300 hover:text-white focus:outline-none"
+        aria-label="Toggle Menu"
+      >
+        <img src="/menu-icon.jpg" alt="menu-icon" className="h-6 w-6" />
+      </button>
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex space-x-6">
+        <a href="#home" className="text-gray-300 hover:text-teal-400">
+          Home
+        </a>
+        <a href="#about" className="text-gray-300 hover:text-teal-400">
+          About Us
+        </a>
+        <a href="#services" className="text-gray-300 hover:text-teal-400">
+          Services
+        </a>
+        <a href="#support" className="text-gray-300 hover:text-teal-400">
+          Support
+        </a>
+        <a href="#contact" className="text-gray-300 hover:text-teal-400">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    {/* Mobile Menu */}
+    <div
+      className={`${
+        isOpen ? "block" : "hidden"
+      } md:hidden space-y-4 mt-4 bg-gray-800 p-4 rounded-lg`}
+    >
+      <a href="#home" className="block text-gray-300 hover:text-teal-400">
+        Home
+      </a>
+      <a href="#about" className="block text-gray-300 hover:text-teal-400">
+        About Us
+      </a>
+      <a href="#services" className="block text-gray-300 hover:text-teal-400">
+        Services
+      </a>
+      <a href="#support" className="block text-gray-300 hover:text-teal-400">
+        Support
+      </a>
+      <a href="#contact" className="block text-gray-300 hover:text-teal-400">
+        Contact
+      </a>
+    </div>
+  </div>
+</nav>
+
 
       {/* Popup */}
       {showPopup && (
@@ -839,7 +865,7 @@ function TechnologyCybersecuritySupport() {
           <p className="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">
             Your Trusted Partner in Digital Security
           </p>
-          <div className="mt-8 flex justify-center space-x-4">
+          <div className="mt-16 flex justify-center space-x-4">
             <a
               href="#services"
               className="inline-block bg-teal-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg
