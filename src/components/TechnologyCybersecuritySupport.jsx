@@ -865,7 +865,7 @@ function TechnologyCybersecuritySupport() {
           <p className="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">
             Your Trusted Partner in Digital Security
           </p>
-          <div className="mt-16 flex justify-center space-x-4">
+          <div className="mt-12 flex justify-center space-x-4">
             <a
               href="#services"
               className="inline-block bg-teal-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg
@@ -883,6 +883,13 @@ function TechnologyCybersecuritySupport() {
 
           </div>
         </div>
+        <div className="relative z-10 mt-10 flex justify-center">
+    <img
+      src="/Housing-pop-up.jpg"
+      alt="Expert Support"
+      className="w-64 md:w-72 lg:w-80 rounded-lg shadow-lg"
+    />
+  </div>
       </header>
     
 
@@ -1028,7 +1035,18 @@ function TechnologyCybersecuritySupport() {
               <strong>Email:</strong> support@cybersecure.com
             </li>
             <li>
-              <strong>Phone:</strong> +1-800-732-8734
+              <strong>Phone:</strong>    <a
+                href="tel:+10865449042"
+              
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "tel:+10865449042";
+               
+                }}
+                className="font-semibold py-3 px-6 hover:bg-green-700 transition transform hover:scale-105"
+              >
+                +108-654-49042
+              </a>
             </li>
           </ul>
 
